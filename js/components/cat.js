@@ -1,10 +1,10 @@
 import { Pet } from './pet.js';
 
-class Dog extends Pet {
+class Cat extends Pet {
     constructor(name, color) {
         super(name,color);
-        this.sound = 'AuAu!';
+        this.sound = 'MiauMiau!🐱🐱';
     }
 }
 
-export { Dog }
+export { Cat }
