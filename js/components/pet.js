@@ -1,15 +1,12 @@
-class Pet {
+import { Animals } from './animals.js';
+
+
+class Pet extends Animals{
     constructor(name, color) {
+        super(name,color);
         this.breed = 'Unknown animal';
         this.environment = 'land';
-        this.name = name;
-        this.color = color;
         this.sound = 'Miau au nom!';
-        this.canEatTillDeath = true;
-    }
-
-    voice() {
-        console.log(`${this.breed} ${this.name} says: ${this.sound}`);
     }
 
     introduce() {
